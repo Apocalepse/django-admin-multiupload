@@ -1,0 +1,98 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2012-09-26 02:34+0600\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n"
+"%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2)\n"
+
+#: templates/multiupload/change_form.html:8
+#: templates/multiupload/change_list.html:8
+#: templates/multiupload/upload.html:31 templates/multiupload/upload.html:36
+msgid "Multiupload"
+msgstr "Мультизагрузка"
+
+#: templates/multiupload/upload.html:6
+msgid "Multi-upload de imagens"
+msgstr "Мультизагрузка"
+
+#: templates/multiupload/upload.html:27 templates/multiupload/upload.html:33
+msgid "Home"
+msgstr "Домой"
+
+#: templates/multiupload/upload.html:42
+msgid "Voltar"
+msgstr "Вернуться"
+
+#: templates/multiupload/upload.html:51
+msgid "Adicionar"
+msgstr "Добавить"
+
+#: templates/multiupload/upload.html:56
+msgid "Iniciar Envio"
+msgstr "Загрузить"
+
+#: templates/multiupload/upload.html:59
+msgid "Cancelar Envio"
+msgstr "Отменить выбор"
+
+#: templates/multiupload/upload.html:62
+msgid "Deletar Arquivos"
+msgstr "Удалить"
+
+#: templates/multiupload/upload.html:166
+msgid "File is too big"
+msgstr "Файл слишком большого размера"
+
+#: templates/multiupload/upload.html:167
+msgid "File is too small"
+msgstr "Файл слишком маленький"
+
+#: templates/multiupload/upload.html:168
+msgid "Filetype not allowed"
+msgstr "Тип файла не поддерживается"
+
+#: templates/multiupload/upload.html:169
+msgid "Max number of files exceeded"
+msgstr ""
+
+#: templates/multiupload/upload.html:170
+msgid "Uploaded bytes exceed file size"
+msgstr ""
+
+#: templates/multiupload/upload.html:171
+msgid "Empty file upload result"
+msgstr ""
+
+#: templates/multiupload/upload.html:173
+msgid "Error"
+msgstr "Ошибка"
+
+#: templates/multiupload/upload.html:174
+msgid "Start"
+msgstr "Старт"
+
+#: templates/multiupload/upload.html:175
+msgid "Cancel"
+msgstr "Отмена"
+
+#: templates/multiupload/upload.html:176
+msgid "Delete"
+msgstr "Удалить"
+
+#: templates/multiupload/upload.html:177
+msgid "Title"
+msgstr "Название"
