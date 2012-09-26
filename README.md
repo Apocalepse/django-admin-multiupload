@@ -12,6 +12,8 @@ Usage
 -----
 
 1. Add ``'multiupload'`` to your ``INSTALLED_APPS``
+2. Make sure that 'django.core.context_processors.static', is present in your TEMPLATE_CONTEXT_PROCESSORS
+(for bootstrap static)
 2. Inherit Your ModelAdmin from ``multiupload.admin.MultiUploadAdmin``
     ```python
     from multiupload.admin import MultiUploadAdmin
