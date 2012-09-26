@@ -3,10 +3,13 @@ django-admin-multiupload
 
 Multi file upload for django-admin app
 
+(Fork from https://github.com/gkuhn1/django-admin-multiupload)
+In this fork i add Russian translation and more visual compatability with django admin look.
+
 Installation
 ------------
 
-pip install git+git://github.com/gkuhn1/django-admin-multiupload.git
+pip install git+git://github.com/Apocalepse/django-admin-multiupload.git
 
 Usage
 -----
