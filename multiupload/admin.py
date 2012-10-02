@@ -10,6 +10,7 @@ from django.utils import simplejson as json
 from django.http import HttpResponse, HttpResponseBadRequest
 from django.contrib.auth.decorators import user_passes_test
 from django.views.decorators.csrf import csrf_exempt
+from django.contrib.admin.views.decorators import staff_member_required
 
 class MultiUploadAdmin(admin.ModelAdmin):
     class Media:
@@ -51,7 +52,7 @@ class MultiUploadAdmin(admin.ModelAdmin):
             "minfilesize": self.multiupload_minfilesize,
             "acceptedformats": self.multiupload_acceptedformats,
           }
-
+#    @staff_member_required
     def render_change_form(self, request, context, *args, **kwargs):
         context.update({
             'multiupload_form': self.multiupload_form,
@@ -67,6 +68,7 @@ class MultiUploadAdmin(admin.ModelAdmin):
         return super(MultiUploadAdmin, self).render_change_form(
                 request, context, *args, **kwargs)
 
+#    @staff_member_required
     def changelist_view(self, request, extra_context=None):
         pop = request.REQUEST.get('pop')
         extra_context = extra_context or {}
@@ -95,12 +97,12 @@ class MultiUploadAdmin(admin.ModelAdmin):
         multi_urls = patterns('')
         if self.multiupload_list:
             multi_urls += patterns('',
-                url(r'^multiupload/$', self.admin_upload_view,
+                url(r'^multiupload/$', staff_member_required(self.admin_upload_view),
                     name=self.get_multiupload_list_view_name())
             )
         if self.multiupload_form:
             multi_urls += patterns('',
-                url(r'^(?P<id>\d+)/multiupload/$', self.admin_upload_view,
+                url(r'^(?P<id>\d+)/multiupload/$', staff_member_required(self.admin_upload_view),
                     name=self.get_multiupload_form_view_name()),
             )
         return multi_urls + super(MultiUploadAdmin, self
@@ -137,7 +139,8 @@ class MultiUploadAdmin(admin.ModelAdmin):
         obj.delete()
 
     @csrf_exempt
-    # @user_passes_test(lambda u: u.is_staff)
+#    @user_passes_test(lambda u: u.is_staff)
+#    @staff_member_required
     def admin_upload_view(self, request, id=None):
         if id:
             object = self.get_object(request, id)
