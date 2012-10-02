@@ -9,12 +9,12 @@
 {% url 'admin:jsi18n' as jsi18nurl %}
 <script type="text/javascript" src="{{ jsi18nurl|default:"../../../jsi18n/" }}"></script>
 {{ media }}
-<script type="text/javascript" src="{{ STATIC_URL }}bootstrap/js/bootstrap.min.js" /></script>
+{% comment %}<script type="text/javascript" src="{{ STATIC_URL }}multiupload/bootstrap/js/bootstrap.min.js"></script>{% endcomment %}
 {% endblock %}
 
 {% block extrastyle %}{{ block.super }}
-<link rel="stylesheet" type="text/css" href="{{ STATIC_URL }}bootstrap/css/bootstrap.min.css" />
-<link rel="stylesheet" type="text/css" href="{% admin_media_prefix %}css/forms.css" />
+<link rel="stylesheet" type="text/css" href="{{ STATIC_URL }}multiupload/bootstrap/css/bootstrap.min.css" />
+<link rel="stylesheet" type="text/css" href="{{ STATIC_URL }}admin/css/forms.css" />
 {% endblock %}
 
 {% block coltype %}{% if ordered_objects %}colMS{% else %}colM{% endif %}{% endblock %}

@@ -23,11 +23,11 @@ msgstr ""
 #: templates/multiupload/change_list.html:8
 #: templates/multiupload/upload.html:31 templates/multiupload/upload.html:36
 msgid "Multiupload"
-msgstr "Пакетная закгрузка"
+msgstr "Пакетная загрузка"
 
 #: templates/multiupload/upload.html:6
 msgid "Multi-upload de imagens"
-msgstr "Пакетная закгрузка"
+msgstr "Пакетная загрузка"
 
 #: templates/multiupload/upload.html:27 templates/multiupload/upload.html:33
 msgid "Home"
