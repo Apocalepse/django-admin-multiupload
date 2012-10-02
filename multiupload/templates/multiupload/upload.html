@@ -9,7 +9,7 @@
 {% url 'admin:jsi18n' as jsi18nurl %}
 <script type="text/javascript" src="{{ jsi18nurl|default:"../../../jsi18n/" }}"></script>
 {{ media }}
-{% comment %}<script type="text/javascript" src="{{ STATIC_URL }}multiupload/bootstrap/js/bootstrap.min.js"></script>{% endcomment %}
+{#<script type="text/javascript" src="{{ STATIC_URL }}multiupload/bootstrap/js/bootstrap.min.js"></script>#}
 {% endblock %}
 
 {% block extrastyle %}{{ block.super }}
