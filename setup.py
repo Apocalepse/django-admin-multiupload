@@ -13,6 +13,3 @@ setup(name='admin_multiupload',
       license='GPL',
       include_package_data=True,
      )
-
-
-
