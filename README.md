@@ -9,7 +9,7 @@ In this fork i add Russian translation and more visual compatability with django
 Installation
 ------------
 
-pip install -e git+git://github.com/Apocalepse/django-admin-multiupload.git#egg=django-admin-multiupload
+pip install git+git://github.com/Apocalepse/django-admin-multiupload.git#egg=django-admin-multiupload
 
 Usage
 -----
